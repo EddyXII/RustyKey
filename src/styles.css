@@ -1,0 +1,68 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    /* Begrenze die maximale Breite des Formulars */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6f4913;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b77c2b;
+}
+
+#popup {
+    display: flex;
+    flex-direction: column;
+}
+
+#status {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#settings-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

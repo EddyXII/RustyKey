@@ -49,7 +49,7 @@ browser.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     }
   });
   
-  // Funktion zur URL des Backends
+  // Funktion welche die URL des Backends zurückgibt
   async function getBackendUrl() {
     const { backendUrl } = await browser.storage.local.get("backendUrl");
     if (!backendUrl) {

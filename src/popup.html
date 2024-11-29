@@ -11,16 +11,17 @@
   <div id="popup">
     <div id="header">
       <h1>rsPass Login</h1>
-      <img id="settings-icon" src="../assets/settings-icon.png" alt="Einstellungen" title="Einstellungen öffnen">
     </div>
+    <img id="settings-icon" src="../assets/settings-icon.png" alt="Einstellungen" title="Einstellungen öffnen">
     <form id="login-form">
       <label for="email">E-Mail:</label>
       <input type="email" id="email" placeholder="E-Mail eingeben" required>
       
       <label for="password">Passwort:</label>
       <input type="password" id="password" placeholder="Passwort eingeben" required>
-      
-      <button type="submit">Anmelden</button>
+      <div id="login-button" class="override">
+        <button type="submit">Anmelden</button>
+      </div>
     </form>
     <p id="status"></p>
   </div>

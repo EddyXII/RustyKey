@@ -1,19 +1,36 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 10px;
+    padding: 3px;
     box-sizing: border-box;
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Verlauf als Hintergrund */
+    color: #ffffff; /* Textfarbe weiß */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background-color: #000000; /* Schwarzer Hintergrund */
+    z-index: -1;
+    border-radius: 5px; /* Optional: Abgerundete Ecken */
 }
 
 h1 {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 10px 20px;
+    border-radius: 8px;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
+    margin: 0 auto;
 }
 
 form {
-    width: 100%;
+    align-self: center;
+    width: 95%;
     max-width: 400px;
     /* Begrenze die maximale Breite des Formulars */
 }
@@ -31,28 +48,39 @@ input {
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #6f4913;
-    color: white;
+    padding-top: 10px;
+    padding: 10px 20px;
+    background-color: grey;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
+
 
 button:hover {
-    background-color: #b77c2b;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
+
 #popup {
+    padding: 20px;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
+    width: 300px;
+    
 }
 
 #status {
-    margin-top: 10px;
-    color: red;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
     text-align: center;
+    background: red;
+    padding: 3px 3px;
+    border-radius: 3px;
+    font-size: 14px;
 }
 
 #header {
@@ -65,4 +93,48 @@ button:hover {
     width: 24px;
     height: 24px;
     cursor: pointer;
+}
+
+#login-button {
+    margin-top: 20px;
+}
+
+#login-form {
+    padding-top: 20px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    text-align: left;
+}
+
+#login-form input::placeholder {
+    font-style: italic;
+}
+
+#login-form label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+#login-text {
+    text-align: center;
+}
+
+#settings-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#settings-form {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#options-header {
+    padding-top: 20px;
+    margin: 5px 20px;
 }
